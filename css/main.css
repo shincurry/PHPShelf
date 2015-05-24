@@ -1,0 +1,98 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+/*	login.php & reg.php	 */
+.error {
+	color: red;
+}
+
+.login_reg_init_page {
+	width: 410px;
+	margin: auto auto;
+}
+
+
+fieldset {
+	margin: 0 auto;
+}
+
+/* core/*.php */
+
+.navigator {
+	background-color: #232527;
+	padding: 24px;
+}
+	
+	.navigator ul {
+		text-align: left;
+		list-style-type: none;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.navigator .page-nav {
+		position: absolute;
+		top: 14px;
+		left: 40px;
+	}
+	
+	.navigator .profile-nav {
+		position: absolute;
+		top: 14px;
+		right: 5px;
+	}
+	
+	.navigator ul li {
+		display: inline;
+		font-size: 18px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.navigator ul li a {
+		padding: 7px;
+		border-radius: 5px;
+	}
+	.navigator ul li a:link, a:visited {
+		text-decoration: none;
+		text-align: center;
+		color: #BDBEBF;
+	}
+	.navigator ul li a:active, a:hover {
+		background-color: black;
+	}
+
+.child-navigator {
+	margin: 40px;
+	text-align: center;
+	font-size: 20px;
+}
+
+
+.container {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+	height: auto;
+}
+
+
+textarea {
+	font-size: 18px;
+	height: auto;
+	width: 100%;
+}
+
+#page {
+	height: 500px;
+	overflow: auto;
+}
+
+/*	footer.php	*/
+.footer {
+	position: inherit;
+	text-align: right;
+	padding: 2px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}

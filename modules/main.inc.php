@@ -1,0 +1,1 @@
+<img src="./images/LOGO.png" class="img-responsive">

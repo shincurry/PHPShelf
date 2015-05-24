@@ -1,0 +1,12 @@
+{
+	"databaseHost" : "localhost",
+	"databaseName" : "",
+	"databaseUsername" : "root",
+	"databasePassword" : "",
+	
+	"shareInfoMaxNum" : "20",
+	
+	"beginning_year" : "2011",
+	"page_title" : "管理",
+	"infoShareFileName" : "./files/infoShare.md"
+}
