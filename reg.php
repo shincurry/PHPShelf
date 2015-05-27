@@ -4,7 +4,7 @@
 	$page_title = "注册";
 	include ('./includes/config.inc.php');
 	include ('./includes/func.inc.php');
-	//isInit();
+	isInit();
 	include ('./includes/header.php');
 
 	

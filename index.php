@@ -6,7 +6,7 @@
 	include ('./includes/config.inc.php');
 	include ('./includes/func.inc.php');
 	
-	//isInit(); //暂时这样 TO-DO
+	isInit(); //暂时这样 TO-DO
 	
 	if(!isset($_SESSION['uid'])){
     	header("Location: ./login.php");
@@ -15,10 +15,7 @@
 	
 	// 查看会员登录是否超时
 	
-	
-	
 	checktime($_SESSION['times']);
-	
 	
 	if (isset($_GET['p'])){
 		$p = $_GET['p'];
@@ -27,7 +24,6 @@
 	}else{
 		$p = null;
 	}
-	
 	
 	switch ($p){
 		case 'themeManage':
@@ -61,13 +57,9 @@
 	
 ?>
 
-
-
 <?php include ('./includes/header.php'); ?>
 
 <?php include ('./modules/navigator.php'); ?>
-
-
 
 <div class="container">
 	<div class="col-sm-3">

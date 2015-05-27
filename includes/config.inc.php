@@ -1,7 +1,6 @@
-<?php	
-	$json = file_get_contents(dirname(__FILE__) . "/../config.json");
-	$settings = json_decode($json);
-	
+<?php
+	$settings = json_decode(file_get_contents(dirname(__FILE__) . "/../config.json"));
+	/*
 	$databaseHost = $settings->{'databaseHost'};
 	$databaseName = $settings->{'databaseName'};
 	$databaseUsername = $settings->{'databaseUsername'};
@@ -12,7 +11,7 @@
 	$beginning_year = (int)$settings->{'beginning_year'};
 	$page_title = $settings->{'page_title'};
 	$infoShareFileName = $settings->{'infoShareFileName'};
-	
+	*/
 	$host = substr($_SERVER['HTTP_HOST'], 0, 5);
 	if (in_array($host, array('host', '192.1', '127.0'))){
 		$local = true;

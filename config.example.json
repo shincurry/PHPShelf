@@ -1,12 +1,19 @@
 {
+	// Webpage config
+	"pageTitle" : "Default Page Title",
+	"subTitle" : "",
+	"description" : "",
+	
+	// Database config
 	"databaseHost" : "localhost",
 	"databaseName" : "",
 	"databaseUsername" : "root",
 	"databasePassword" : "",
 	
+	// infoshare page config
 	"shareInfoMaxNum" : "20",
+	"infoShareFileName" : "./files/infoShare.md",
 	
-	"beginning_year" : "2011",
-	"page_title" : "管理",
-	"infoShareFileName" : "./files/infoShare.md"
+	// footer config
+	"beginningYear" : "2011"
 }

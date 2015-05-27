@@ -1,9 +1,10 @@
+<?php include ('./config.inc.php'); ?>
 <html>
 
 <head>
-	<title><?php if (!isset($page_title)) { $page_title = 'Default Page Title'; } echo $page_title; if (isset($page_subtitle)) { echo "-" . $page_subtitle; } ?></title>
+	<title><?php echo $settings->{'pageTitle'}; if (isset($page_subtitle)) { echo "-" . $settings->{'subTitle'}; } ?></title>
 	<meta charset="UTF-8">
-	<meta name="description" content="" />
+	<meta name="description" content="<?php echo $settings->{'description'}; ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
 	<!-- 新 Bootstrap 核心 CSS 文件 -->
