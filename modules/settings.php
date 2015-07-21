@@ -20,7 +20,7 @@
 
 <div class="infoShareEdit">
 	<form action="" method="post">
-		<textarea name="infoShare" rows="16" cols="60"><?php echo file_get_contents($infoShareFileName); ?></textarea><br>
+		<textarea name="infoShare" rows="16" cols="60"><?php echo file_get_contents($settings->{'infoShareFileName'}); ?></textarea><br>
 		<input type="submit" class="btn btn-default" name="submit" value="更新">
 	</form>
 	

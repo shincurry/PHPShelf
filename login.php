@@ -3,9 +3,8 @@
 	
 	$errorMessage = "";
 	$page_title = "登录";
-	include ('./includes/config.inc.php');
-	include ('./includes/func.inc.php');
-	isInit();
+	
+	//isInit();
 	include ('./includes/header.php');
 	
 	$connect = mysql_connect($settings->{'databaseHost'}, $settings->{'databaseUsername'}, $settings->{'databasePassword'}) or die('Could not connect: ' . mysql_error());
@@ -47,7 +46,6 @@
 			! 登录失败
 			<button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
 			</div>";
-			
 	}
 	
 	

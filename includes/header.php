@@ -1,4 +1,7 @@
-<?php include ('./config.inc.php'); ?>
+<?php
+	include ('config.inc.php');
+	include ('func.inc.php');
+?>
 <html>
 
 <head>

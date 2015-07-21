@@ -2,9 +2,9 @@
 	include ('./includes/config.inc.php');
 	include ('./includes/parsedown/Parsedown.php');
 	
-	if (file_exists($infoShareFileName) && is_readable ($infoShareFileName)) {
+	if (file_exists($settings->{'infoShareFileName'}) && is_readable ($settings->{'infoShareFileName'})) {
 		$markdownText = new Parsedown();
-		echo $markdownText->text(file_get_contents($infoShareFileName));
+		echo $markdownText->text(file_get_contents($settings->{'infoShareFileName'}));
 	}else{
 		file_put_contents($infoShareFileName, "");
 	}

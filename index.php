@@ -2,11 +2,9 @@
 
 <?php
 	session_start();
+	include ('./includes/header.php');
 	
-	include ('./includes/config.inc.php');
-	include ('./includes/func.inc.php');
-	
-	isInit(); //暂时这样 TO-DO
+	//isInit(); //暂时这样 TO-DO
 	
 	if(!isset($_SESSION['uid'])){
     	header("Location: ./login.php");
@@ -56,8 +54,6 @@
 	}
 	
 ?>
-
-<?php include ('./includes/header.php'); ?>
 
 <?php include ('./modules/navigator.php'); ?>
 
