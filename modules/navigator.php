@@ -1,5 +1,4 @@
 <body>
-	
 	<div class="navigator">
 		<div class="page-nav">
 			<ul>

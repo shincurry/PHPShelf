@@ -2,9 +2,19 @@
 
 <?php
 	session_start();
+	include ('./includes/config.inc.php');
+	include ('./includes/func.inc.php');
 	include ('./includes/header.php');
+
 	
-	//isInit(); //暂时这样 TO-DO
+	$connect = mysql_connect($settings->{'databaseHost'}, $settings->{'databaseUsername'}, $settings->{'databasePassword'}) or die('Could not connect: ' . mysql_error());
+	
+
+	if(!mysql_select_db($settings->{'databaseName'}, $connect)){
+		init();
+	}
+
+	
 	
 	if(!isset($_SESSION['uid'])){
     	header("Location: ./login.php");

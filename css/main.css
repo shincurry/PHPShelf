@@ -22,6 +22,7 @@ fieldset {
 .navigator {
 	background-color: #232527;
 	padding: 24px;
+	position: relative;
 }
 	
 	.navigator ul {
